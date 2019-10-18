@@ -1,5 +1,7 @@
 #!/bin/bash
 
+umount -R /proc
+mount -t proc proc /proc
 
 initialize_restore() {
     cd /home/criu-dump-location/dump-image-store
